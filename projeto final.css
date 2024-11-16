@@ -1,0 +1,276 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Tom mais claro para menos cansaço visual */
+    margin: 20px;
+    color: #333;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1, .section-title {
+    color: #2d2d2d;
+    text-align: center;
+    font-size: 2em;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid #4672d1; /* Adicionei uma borda para destacar */
+}
+
+.section-title {
+    color: #555;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.skills-container {
+    margin: 20px 0;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill span {
+    font-weight: bold;
+    color: #4672d1; /* Destaque para os títulos */
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 15px;
+    margin-top: 5px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4672d1;
+    transition: width 0.3s ease; /* Suaviza a alteração de tamanho */
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    width: 99%;
+    padding: 12px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #4672d1;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #4672d1;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #005bbb;
+    transform: scale(1.05); /* Efeito visual sutil ao passar o mouse */
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.depoimentos {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.depoimento {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.client-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.depoimento-texto h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.depoimento-texto p {
+    margin: 5px 0 0;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    text-align: center;
+    background-color: #fefefe;
+    padding: 10px;
+    width: 140px; /* Aumentei o tamanho para dar mais destaque */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.gallery-item p {
+    font-size: 0.9em;
+    color: #333;
+    margin-top: 8px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.08);
+    background-color: #fce4ec;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, rgba(255, 192, 203, 0.2), rgba(255, 105, 180, 0.2));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 12px;
+}
+
+.gallery-item:hover::after {
+    opacity: 1;
+}
+.learning-section {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.learning-section h2 {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.learning-section h3 {
+    color: #555;
+    margin-top: 20px;
+}
+
+.code-sample {
+    display: block;
+    background-color: #eef2ff;
+    padding: 15px;
+    border-radius: 5px;
+    color: #333;
+    font-family: monospace;
+    overflow-x: auto;
+}
+
+.comment-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.comment-form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.comment-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #535db8;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+    background-color: #3f4fa1;
+}

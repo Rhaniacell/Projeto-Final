@@ -1,155 +1,100 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9; /* Tom mais claro para menos cansaço visual */
-    margin: 20px;
-    color: #333;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
-    background: #ffffff;
+    max-width: 1200px;
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-h1, .section-title {
-    color: #2d2d2d;
+h1 {
     text-align: center;
-    font-size: 2em;
-}
-
-.image-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.profile-pic {
-    width: 150px;
-    border-radius: 50%;
-    border: 4px solid #4672d1; /* Adicionei uma borda para destacar */
+    color: #333;
 }
 
 .section-title {
-    color: #555;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
     font-size: 1.8em;
+    margin-top: 30px;
+    color: #444;
 }
 
-.skills-container {
+.image-container {
+    display: flex;
+    justify-content: center;
     margin: 20px 0;
 }
 
-.skill {
-    margin-bottom: 10px;
+.profile-pic {
+    width: 130px;
+    height: 150px;
+    border-radius: 50%;
 }
 
-.skill span {
-    font-weight: bold;
-    color: #4672d1; /* Destaque para os títulos */
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.skills-container {
+    margin-top: 30px;
+}
+
+.skill {
+    margin-bottom: 15px;
 }
 
 .progress-bar {
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    overflow: hidden;
     height: 15px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
     margin-top: 5px;
 }
 
 .progress {
     height: 100%;
     background-color: #4672d1;
-    transition: width 0.3s ease; /* Suaviza a alteração de tamanho */
-}
-
-form {
-    margin-top: 20px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="submit"] {
-    width: 99%;
-    padding: 12px;
-    margin: 5px 0 15px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus {
-    border-color: #4672d1;
-    outline: none;
-}
-
-input[type="submit"] {
-    background-color: #4672d1;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: #005bbb;
-    transform: scale(1.05); /* Efeito visual sutil ao passar o mouse */
+    transition: width 0.4s ease-in-out;
 }
 
 .social-link {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
+    gap: 10px;
+    justify-content: left;
 }
 
-.social-icon {
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
+.social-link a {
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.depoimentos {
-    margin-top: 20px;
-    text-align: center;
+.social-link a:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
 }
 
 .depoimento {
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #f9f9f9;
-    border-radius: 10px;
     padding: 20px;
+    border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.client-photo {
-    width: 60px;
-    height: 60px;
+.depoimento img {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin-right: 15px;
-}
-
-.depoimento-texto h3 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #333;
-}
-
-.depoimento-texto p {
-    margin: 5px 0 0;
-    font-size: 1em;
-    color: #555;
-    line-height: 1.6;
 }
 
 .gallery {
@@ -169,7 +114,7 @@ input[type="submit"]:hover {
     text-align: center;
     background-color: #fefefe;
     padding: 10px;
-    width: 140px; /* Aumentei o tamanho para dar mais destaque */
+    width: 140px;
 }
 
 .gallery-item img {
@@ -210,6 +155,7 @@ input[type="submit"]:hover {
 .gallery-item:hover::after {
     opacity: 1;
 }
+
 .learning-section {
     width: 70%;
     margin: 0 auto;
@@ -273,4 +219,16 @@ input[type="submit"]:hover {
 
 .comment-form button:hover {
     background-color: #3f4fa1;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
 }

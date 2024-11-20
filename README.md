@@ -23,37 +23,31 @@ Aqui estão alguns comandos básicos:
 Clonar o repositório
 Para baixar o repositório pela primeira vez, use:
 
-bash
 Copiar código
 git clone <URL_DO_REPOSITORIO>
 Entrar na pasta do projeto
 Após clonar o repositório, navegue até o diretório do projeto:
 
-bash
 Copiar código
 cd <nome_da_pasta>
 Verificar o status do repositório
 Para verificar alterações não rastreadas ou arquivos modificados:
 
-bash
 Copiar código
 git status
 Adicionar arquivos ao repositório
 Adicione todos os arquivos modificados para serem rastreados:
 
-bash
 Copiar código
 git add .
 Fazer um commit
 Salve suas alterações localmente com uma mensagem:
 
-bash
 Copiar código
 git commit -m "Descrição das alterações"
 Enviar alterações para o GitHub
 Envie suas alterações locais para o repositório remoto:
 
-bash
 Copiar código
 git push origin main
 Atualizar o repositório local

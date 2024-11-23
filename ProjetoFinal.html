@@ -2,15 +2,16 @@
 <html lang="pt-BR">
 
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Pessoal de Rhania</title>
-    <link rel="stylesheet" href="projetofinal2.css">
+    <link rel="stylesheet" href="projeto final.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>Rhania Tavares - Estudante de Direito</h1>
+        <h1>Rhania Tavares</h1>
 
         <div class="image-container">
             <img src="foto sel.jpeg" alt="Foto de Rhania" class="profile-pic">
@@ -63,19 +64,45 @@
 
         <section>
             <h2 class="section-title">Redes Sociais</h2>
-            <p class="social-link">
+            <p class="social-icons">
                 <a href="https://www.instagram.com/rhaniatavares" target="_blank">
-                    <img src="instaicon.jpg" alt="Enviar mensagem no Instagram" style="width: 30px;height: 30px;">
+                    <img src="0c2d1e1dfc8b0fd617d8d60f82bf46f5.jpg" alt="Enviar mensagem no Instagram" class="social-icon">
                 </a>
                 <a href="https://wa.me/5585985130364?text=Olá!%20Gostaria%20de%20falar%20com%20você." target="_blank">
-                    <img src="whatsapp-icon-logo-png_seeklogo-285144.png" alt="Enviar mensagem no WhatsApp" style="width: 30px;height: 30px;">
+                    <img src="whatsapp-icon-logo-png_seeklogo-285144.png" alt="Enviar mensagem no WhatsApp" class="social-icon">
                 </a>
                 <a href="https://github.com/Rhaniacell" target="_blank">
-                    <img src="github icon.png" style="width: 30px;height: 30px;">
+                    <img src="github icon.png" class="social-icon">
                 </a>
             </p>
         </section>
+        <section>
+            <h2 class="section-title">Contato</h2>
+      <form class="contact-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
 
+        <label for="email">E-mail:</label>
+        <div class="email-container">
+            <input type="text" id="email" name="email-user" placeholder="usuario" required>
+            <select name="email-domain" required>
+                <option value="@gmail.com">@gmail.com</option>
+                <option value="@yahoo.com">@yahoo.com</option>
+                <option value="@hotmail.com">@hotmail.com</option>
+                <!-- Adicione mais opções de domínio conforme necessário -->
+            </select>
+        </div>
+
+        <label for="subject">Assunto:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="phone">Telefone para Contato (DDD + Telefone):</label>
+        <input type="text" id="phone" name="phone" placeholder="Ex: 11 91234-5678" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+        </section>
+           
         <section class="depoimentos">
             <h2 class="section-title">Depoimentos</h2>
             <div class="depoimento">
@@ -96,12 +123,12 @@
                 <img src="cliente 3.jpg" alt="Foto do Cliente 3" class="client-photo">
                 <div class="depoimento-texto">
                     <h3>Marcos Zarate</h3>
-                    <p>“Excelente serviço! A Rhania é muito competente e fez toda a diferença no meu projeto.”</p>
+                    <p>“Excelente serviço! A Rhania é muito competente e fez toda a diferença nos meus projetos da Meta.”</p>
                 </div>
             </div>
         </section>
 
-        <section class="container">
+        <section>
             <h2 class="section-title">Galeria de Fotos</h2>
             <div class="gallery">
                 <div class="gallery-item">
@@ -146,7 +173,7 @@
             </div>
         </section>
 
-        <section class="learning-section">
+        <section>
             <h2>Aprendizado em Tecnologia</h2>
             <p>Estou aprendendo tecnologias essenciais para desenvolvimento web, incluindo HTML e CSS. Abaixo estão alguns exemplos práticos e dicas que podem ser úteis para iniciantes.</p>
 
@@ -181,15 +208,17 @@
             line-height: 1.6;
         }
             </code></pre>
-            <hr>
-            <h3>Dicas para Iniciantes</h3>
+        </section>
+        <section>
+            <h2>Dicas para Iniciantes</h2>
             <ul>
                 <li>Utilize tags semânticas como &lt;header&gt;, &lt;footer&gt; e &lt;section&gt; para organizar o conteúdo.</li>
                 <li>Centralize e organize seu CSS para uma manutenção mais fácil.</li>
                 <li>Use classes e IDs para aplicar estilos específicos e reutilizáveis.</li>
             </ul>
-            <hr>
-            <h3>Envie seu Comentário</h3>
+        </section>
+        <section>
+            <h2>Envie seu Comentário</h2>
             <form class="comment-form">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" required>
@@ -204,6 +233,10 @@
             </form>
         </section>
     </div>
+    <footer>
+        <p> <a> 2024 Rhania. Todos os direitos reservados.</a> </a></p>
+        <p> <a>Desenvolvido com 💖 |</a> <a href="#top">Voltar ao topo</a></p>
+    </footer>    
 </body>
 
 </html>
